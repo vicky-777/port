@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      body {
+        background-color:rgb(32, 9, 61);
+        color: rgb(232, 227, 227);
+        font-family: "Josefin Sans", sans-serif;
+      }
+      nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        padding-top: 20px;
+        background-color:rgb(17, 0, 33) ;
+        padding-bottom: 20px;
+        font-size: larger;
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li{
+        list-style: none;
+        margin:0 30px ;
+        
+      }
+      
+      nav ul li a{
+        text-decoration: none;
+        margin:0 20px ;
+        color: aqua;
+
+        
+      }
+      
+        nav ul li a:hover{
+          color: rgb(81, 1, 156);
+        }
+      
+
+     
+      .left{
+        font-size: 2rem;
+      }
+      .first,.second{
+        display:flex ;
+        justify-content: space-between;
+        margin: 23px 0;
+
+      }
+       
+      .lsec {
+       
+       margin: 125px;
+       font-size: 3rem;
+       align-items: center;
+       line-height: 1.8;
+       height: 200px;
+       width: 200px;
+       background-color: aqua;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-family: fantasy;
+            
+       color: rgb(17, 2, 52);
+       animation-duration: 3s;
+       animation-name: spin;
+       animation-iteration-count: infinite;
+       animation-direction:alternate-reverse;
+            
+
+       
+        
+        
+      }
+       @keyframes spin {
+            0% {}
+            50% {
+                transform: scale(1.5);
+            }
+            100% {
+                transform: rotate(360deg);
+                border-radius: 50%;
+            }
+        }
+
+      .rsec {
+       
+       width: 60%;
+        margin: 60px;
+        padding: 125px;
+        font-size: 2rem;
+        margin-top: 20px;
+        line-height: 3.5rem;
+       
+        
+      }
+      .intro{
+        color:aqua;
+      }
+      #element{
+        color: aqua;
+      }
+      .second {
+        margin: 125px;
+       
+        font-size: 2rem;
+        color: aqua;
+       
+        
+      }
+      .who{
+        background-color: rgb(2, 6, 52);
+        padding : 50px;
+        border-radius: 50px;
+        line-height: 4rem;
+        border-style:solid;
+        color: azure;
+        border-color: rgb(255, 255, 255);
+        margin-top: 30px;
+      
+      }
+      .title{
+        color: aqua;
+      }
+    </style> 
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">PORTFOLIO</div>
+        <div class="right">
+            <ul>
+               <a href="re.html"><li>Home</a></li>
+               <a href="about.html"><li>About</a></li>
+               <a href="projects.html"><li>Projects</a></li>
+               <a href="contactme.html"><li>Contact me</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="lsec">
+                <p>1</p>
+               
+            </div>
+               <div class="rsec">
+                <h1 class="title">QuickRead</h1>
+               <p>The project involves developing a Chrome extension that helps users better interact with web content by providing key functionalities: <br>
+               <strong>Content Summarization</strong>: The extension will use API-based services to extract and summarize the key points from web content. The user can trigger the summary either through a button or a context menu option. <br> 
+               <strong>Word Definition Lookup</strong>: By integrating a dictionary API, the extension will allow users to select any word on the webpage and get an instant definition in a tooltip or popup, reducing the need to navigate away from the page.
+</p>
+               </div>
+        </section>
+
+        <section class="first">
+            <div class="lsec">
+                <p>2</p>
+            </div>
+            <div class="rsec">
+                <h1 class="title">Automated saline level</h1>
+                <p>● To monitor saline levels using load cell which is based on the weight
+of the saline bottle <br>
+● To provide real-time data of the saline level using IoT <br>
+● To enable remote control and data logging <br>
+● To enable automatic control over the flow rate</p>
+            </div>
+
+
+        </section>
+
+
+        
+        <section class="first">
+            <div class="lsec">
+                <p>3</p>
+            </div>
+            <div class="rsec">
+                <h1 class="title">Line following Robo</h1>
+                <p><strong>Objective:</strong> A line-following robot autonomously tracks a line on the ground. <br>
+
+<strong>Components:</strong> It uses a microcontroller, sensors (e.g., infrared), and motors with a motor driver. <br>
+
+<strong>Functionality:</strong> Sensors detect the line, and the robot adjusts its movement to stay on track. <br>
+
+<strong>Control System:</strong> The microcontroller processes sensor data and controls the motors to correct the robot’s path.</p>
+            </div>
+
+
+        </section>
+
+        
+
+
+         
+    </main>
+   
+  </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      body {
+        background-color:rgb(32, 9, 61);
+        color: rgb(232, 227, 227);
+        font-family: "Josefin Sans", sans-serif;
+      }
+      nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 50px;
+        padding-top: 20px;
+        background-color:rgb(17, 0, 33) ;
+        padding-bottom: 20px;
+        font-size: larger;
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li{
+        list-style: none;
+        margin:0 30px ;
+        
+      }
+      
+      nav ul li a{
+        text-decoration: none;
+        margin:0 20px ;
+        color: aqua;
+
+        
+      }
+      
+        nav ul li a:hover{
+          color: rgb(81, 1, 156);
+        }
+      
+
+     
+      .left{
+        font-size: 2rem;
+      }
+      .first{
+        display:flex ;
+        justify-content: space-between;
+        margin: 23px 0;
+
+      }
+
+      .contact-section {
+  width: 100%;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 1rem;
+}
+
+.contact-intro > * + * {
+  margin-top: 1rem;
+}
+
+.contact-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.contact-description {
+  color: rgb(107 114 128);
+}
+
+.form-group-container {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.form-input::placeholder,
+.form-textarea:focus-visible {
+  color: #6b7280;
+}
+
+.form-input:focus-visible,
+.form-textarea:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.form-textarea {
+  min-height: 120px;
+}
+
+.form-submit {
+  width: 100%;
+  margin-top: 1.2rem;
+  background-color: #3124ca;
+  color: #fff;
+  padding: 13px 5px;
+  border-radius: 0.375rem;
+}
+.handles{
+    margin: 200px;
+    text-decoration: none;
+}
+
+      </style>
+
+      </style> 
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">PORTFOLIO</div>
+        <div class="right">
+            <ul>
+               <a href="re.html"><li>Home</a></li>
+               <a href="about.html"><li>About</a></li>
+               <a href="projects.html"><li>Projects</a></li>
+               <a href="contactme.html"><li>Contact me</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+  <div class="contact-intro">
+    <h2 class="contact-title">Get in Touch</h2>
+    <p class="contact-description">
+      Fill out the form below and I'll get back to you as soon as possible.
+    </p>
+  </div>
+
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="f895437d-d43c-4dfb-b5d9-2c66d1cf8a6e" />
+    <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+    <input type="hidden" name="from_name" value="My Website" />
+   
+
+    <div class="form-group-container">
+      <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+      </div>
+      
+      <div class="form-group">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+      </div>
+    </div>
+    <button class="form-submit" type="submit">Send Message</button>
+  </form>
+
+</section>
+
+<section class="handles">
+    <p>contact me through instagram at <a href="https://www.instagram.com/volhardzelinsky">Volhardzelinsky</a></p>
+    <p>contact me through linkedIn at <a href="https://www.linkedin.com/in/b-s-v-vivek-2947b028b">B S V Vivek</a></p>
+</section>
+
+
+    </main>
